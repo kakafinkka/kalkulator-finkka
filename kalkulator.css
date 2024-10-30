@@ -1,0 +1,80 @@
+body {
+    background: rgb(243, 185, 214);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    /* border: solid 1px red; */
+}
+
+#kalkulator {
+    border: solid 1px white;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 204, 244), rgb(250, 122, 222));
+    color: black;
+    min-width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.wrapper div {
+    width: 100%;
+    /* background: black; */
+    padding: 5px 10px;
+}
+
+#hasil, #btn-hitung {
+    font-size: 22px;
+}
+
+#operasi-temporer {
+    font-size: 9px;
+}
+
+.bg-abu { background: #fd81de; }
+.bg-red { background: #ee84cb; }
+.bg-dark-brown { background: #f866d4; }
+.bg-brown { background: #fab9e6; }
+.bg-dark-blue { background: #f770e0; }
+.bg-purple { background: #f56fdf; }
+.bg-green { background: #eb78ce; }
+.bg-blue { background: #f7aeeb; }
+
+#judul {
+    padding: 10px;
+}
+
+.tombol {
+    border: solid 1px #ec63d5;
+    box-shadow: 0 0 3px rgb(236, 123, 227), 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow tambahan */
+    border-radius: 5px; /* Membuat sudut tombol sedikit membulat */
+    padding: 8px 12px; /* Spasi dalam tombol */
+    margin: 0 5px; /* Menambah jarak hanya di sisi kiri dan kanan */
+}
+
+.tombol-aktif {
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.tombol-aktif:hover {
+    background: linear-gradient(#fcf, #f0f);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(238, 109, 216, 0.897), 0 0 10px rgba(248, 68, 167, 0.897); /* Efek glow di hover */
+    border-color: #f0f; /* Mengubah warna border saat hover */
+}
+
+.tombol-nonaktif {
+    box-shadow: none !important;
+}
